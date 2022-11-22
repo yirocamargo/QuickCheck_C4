@@ -21,5 +21,7 @@ public class UsuarioModel {
     private String username;
     private String area;
     private boolean estado;   
+    /////
+    /////
     
 }

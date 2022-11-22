@@ -7,5 +7,6 @@ import co.edu.unab.apirest.models.UsuarioModel;
 
 @Repository
 public interface UsuarioRepositoty extends MongoRepository <UsuarioModel,String>{
-    
+    ///////
+    /////
 }
