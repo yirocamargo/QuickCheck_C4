@@ -2,6 +2,7 @@ package co.edu.unab.apirest.services;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,10 @@ public class UsuarioService {
         usuarioRepositoty.findAll().sort(Comparator.comparing(UsuarioModel::getNombre));
         usuarioRepositoty.findAll().sort(Comparator.comparing(UsuarioModel::getNombre));
         return usuarioRepositoty.findAll();
+    }
+
+    public Optional <UsuarioModel> getUsuarioByID (String id){
+        return usuarioRepositoty.findById(id);//{"id"}
     }
 
     public UsuarioModel saveUsuario(UsuarioModel usuario){

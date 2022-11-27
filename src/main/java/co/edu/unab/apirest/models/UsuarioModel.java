@@ -19,8 +19,9 @@ public class UsuarioModel {
     private String nombre;
     private String apellido;
     private String username;
-    private String area;
+    private String contraseña;
     private boolean estado;   
+    private Object role;//{"area":"","rol":""}
     /////
     /////
     

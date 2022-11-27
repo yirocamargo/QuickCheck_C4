@@ -1,6 +1,7 @@
 package co.edu.unab.apirest.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -25,6 +26,11 @@ public class UsuarioController {
     @GetMapping
     public List<UsuarioModel> getAllUsuarios() {
         return usuarioService.getAllUsuarios();
+    }
+
+    @GetMapping(path = "/{id}")
+    public Optional<UsuarioModel> getUsuarioByID(@PathVariable("id") String id){
+        return usuarioService.getUsuarioByID(id);
     }
 
     @PostMapping()
