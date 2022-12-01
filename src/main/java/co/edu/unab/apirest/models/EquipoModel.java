@@ -11,6 +11,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -22,8 +24,7 @@ public class EquipoModel {
     private String referencia;
     private String nombre;
     private String serial;
-    private String marca;
-    private boolean estado;
-    private ArrayList<String> tipoEquipos;//["Teclado","Monitor","Mouse","Otro"]
-    private Object ubicacion;//{"departamento":"","ciudad":"","direccion":""}
+    private String categoria;
+    private ArrayList<String> listaVerificacion;//["Teclado","Monitor","Mouse","Otro"]
+    private ArrayList<String> listaChequeo;//["Teclado","Monitor","Mouse","Otro"]
 }
